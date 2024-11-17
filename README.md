@@ -6,4 +6,5 @@
 - Database - `MongoDB`
 - Google Authentication - `Firebase`
 - Backend Deployment - `Railway`
-    - Backend Repo https://github.com/pratham-developer/chatify-backend
+- Backend Repo 
+    https://github.com/pratham-developer/chatify-backend
