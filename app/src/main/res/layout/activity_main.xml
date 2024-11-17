@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginBottom="80dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/secondary"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/loginText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Chatify"
+                android:textAlignment="center"
+                android:textColor="@color/tertiary"
+                android:textSize="52sp"
+                android:textStyle="bold" />
+
+            <!-- PIN EditText -->
+            <EditText
+                android:id="@+id/pinEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Enter PIN"
+                android:textColorHint="@color/tertiary"
+                android:inputType="numberPassword"
+                android:textAlignment="center"
+                android:textColor="@color/tertiary"
+                android:textSize="18sp"
+                android:backgroundTint="@color/primary"
+                android:padding="12dp" />
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/primary"
+                android:text="Sign in with Google"
+                android:textColor="@color/tertiary"
+                android:textSize="20sp"
+                app:cornerRadius="20dp" />
+
+            <TextView
+                android:id="@+id/forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:padding="8dp"
+                android:text="Texting Made Easy !"
+                android:textColor="@color/tertiary"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Add the Extended Floating Action Button here -->
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/findMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="100dp"
+        android:layout_marginEnd="40dp"
+        android:scaleX="1.3"
+        android:scaleY="1.3"
+        android:text="GitHub"
+        android:textColor="@color/tertiary"
+        android:textStyle="bold"
+        app:backgroundTint="@color/secondary"
+        app:iconGravity="textStart"
+        app:iconTint="@color/tertiary"
+        app:icon="@drawable/github"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:rippleColor="@color/primary" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
