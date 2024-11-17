@@ -1,4 +1,4 @@
-*```Chat app made made using Retrofit and Socket.io```* 
+*```Chat app made using Retrofit and Socket.io```* 
 
 - App Name - `Chatify`
 - Frontend - `Kotlin`
